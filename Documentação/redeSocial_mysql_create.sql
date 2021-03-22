@@ -3,6 +3,7 @@ CREATE TABLE `usuario` (
 	`nomeCompleto` varchar(75) NOT NULL,
 	`email` varchar(150) NOT NULL UNIQUE,
 	`senha` varchar(255) NOT NULL,
+	`cpfCnpj` varchar(50) NOT NULL,
 	PRIMARY KEY (`id`)
 );
 
