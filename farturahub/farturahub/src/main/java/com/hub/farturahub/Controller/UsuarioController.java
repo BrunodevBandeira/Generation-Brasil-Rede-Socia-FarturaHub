@@ -1,4 +1,3 @@
-
 package com.hub.farturahub.Controller;
 
 import java.util.List;
@@ -16,47 +15,47 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.hub.farturahub.Repository.TemaRepository;
-import com.hub.farturahub.model.Tema;
+import com.hub.farturahub.Repository.UsuarioRepository;
+import com.hub.farturahub.model.Usuario;
 
 @RestController
-@RequestMapping("/tema")
+@RequestMapping("/usuario")
 @CrossOrigin("*")
-
-
-public class TemaController {
+public class UsuarioController {
 	
 	@Autowired
-	private TemaRepository repository;
+	private UsuarioRepository repository;
 	
 	@GetMapping
-	public ResponseEntity<List<Tema>> GetAll(){
+	public ResponseEntity<List<Usuario>> getAll(){
 		return ResponseEntity.ok(repository.findAll());
 	}
-
+	
 	@GetMapping("/{id}")
-	public ResponseEntity<Tema> GetById(@PathVariable long id){
+	public ResponseEntity<Usuario> getById(@PathVariable long id){
 		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 	
-	@GetMapping("/descricao/{descricao}")
-	public  ResponseEntity<List<Tema>> GetByDescricao(@PathVariable String descricao){
-		return ResponseEntity.ok(repository.findAllByDescricaoContainingIgnoreCase(descricao));
+	@GetMapping("/cpfCnpj/{cpfCnpj}")
+	public ResponseEntity<List<Usuario>> getByCpfCnpj(@PathVariable String cpfCnpj){
+		return ResponseEntity.ok(repository.findAllBycpfCnpjContainingIgnoreCase(cpfCnpj));
 	}
 	
+	
 	@PostMapping
-	public ResponseEntity<Tema> post (@RequestBody Tema post){
+	public ResponseEntity<Usuario> post(@RequestBody Usuario post){
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(post));
 	}
+	
 	@PutMapping
-	public ResponseEntity<Tema> put (@RequestBody Tema post){
+	public ResponseEntity<Usuario> put(@RequestBody Usuario post){
 		return ResponseEntity.status(HttpStatus.OK).body(repository.save(post));
 	}
 	
 	@DeleteMapping("/{id}")
 	public void delete(@PathVariable long id) {
 		repository.deleteById(id);
-		
 	}
+	
+		
 }
-
