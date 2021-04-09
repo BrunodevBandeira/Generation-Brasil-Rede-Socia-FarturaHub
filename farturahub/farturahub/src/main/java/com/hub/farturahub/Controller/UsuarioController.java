@@ -1,6 +1,7 @@
 package com.hub.farturahub.Controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -33,11 +34,11 @@ public class UsuarioController {
 	
 	@GetMapping("/{id}")
 	public ResponseEntity<Usuario> getById(@PathVariable long id){
-		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
+		return repository.findAllById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 	
 	@GetMapping("/cpfCnpj/{cpfCnpj}")
-	public ResponseEntity<List<Usuario>> getByCpfCnpj(@PathVariable String cpfCnpj){
+	public ResponseEntity<Optional<Usuario>> getByCpfCnpj(@PathVariable String cpfCnpj){
 		return ResponseEntity.ok(repository.findAllBycpfCnpjContainingIgnoreCase(cpfCnpj));
 	}
 	
