@@ -25,6 +25,6 @@ public class UsuarioService {
 		String senhaEncoder = encoder.encode(usuario.getSenha());
 		usuario.setSenha(senhaEncoder);
 		
-		return repository.save(usuario);
+		return Optional.empty();
 	}
 }

@@ -32,9 +32,9 @@ public class UsuarioController {
 		return ResponseEntity.ok(repository.findAll());
 	}
 	
-	@GetMapping("/{id}")
+	@GetMapping("{id}")
 	public ResponseEntity<Usuario> getById(@PathVariable long id){
-		return repository.findAllById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
+		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 	
 	@GetMapping("/cpfCnpj/{cpfCnpj}")
