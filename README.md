@@ -5,7 +5,7 @@
 :heavy_check_mark: Criação do projeto na IDE Eclipse 
 
 
-:heavy_check_mark: Criação e confuguração do projeto Spring (com Java 8) com as seguintes dependências:
+:heavy_check_mark: Criação e configuração do projeto Spring (com Java 8) com as seguintes dependências:
 
   :information_source: commons-codec;
 
