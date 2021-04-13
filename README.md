@@ -9,13 +9,10 @@
   O nosso principal propósito é promover o afastamento do Brasil do mapa da fome, além de conectar pessoas e empresas que querem ajudar, mas não sabem por onde começar, gerando, assim, um ciclo sem fim de união e ajuda ao próximo.
   
 ### Valores
-*Fome de ajudar quem precisa
-
-**Fome de aprender
-
-*Fome de respeitar
-
-*Fome de lutar pela deflagração do fim da fome e pela agricultura sustentável
+:triangular_flag_on_post:Fome de ajudar quem precisa
+:triangular_flag_on_post:Fome de aprender
+:triangular_flag_on_post:Fome de respeitar
+:triangular_flag_on_post:Fome de lutar pela deflagração do fim da fome e pela agricultura sustentável
 
 :beginner: Passos:
 
