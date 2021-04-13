@@ -1,4 +1,9 @@
-# Generation-Brasil-Rede-Socia-FarturaHub
+## Generation-Brasil-Rede-Socia-FarturaHub
+
+# Contribuintes:
+
+[<img src="https://avatars.githubusercontent.com/u/67028249?s=400&u=f8af52940311acbcefe3d2c61b8d8a337fe03d05&v=4" width=115 > <br> <sub> Murilo Paulino Machado </sub>](https://github.com/murilo-pm) |
+| :---: |  
 
 :beginner: Passos:
 
