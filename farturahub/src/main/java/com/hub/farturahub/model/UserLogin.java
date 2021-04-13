@@ -28,6 +28,9 @@ public class UserLogin {
 		this.nomeCompleto = nomeCompleto;
 	}
 
+	
+
+
 	public String getEmail() {
 		return email;
 	}

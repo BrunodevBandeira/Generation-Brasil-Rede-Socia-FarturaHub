@@ -30,10 +30,11 @@ public class UsuarioController {
 	@Autowired
 	private UsuarioRepository repository;
 	
-	@GetMapping("/email/{email}")
-    public ResponseEntity<Optional<Usuario>> getByEmail(@PathVariable String email){
-        return ResponseEntity.ok(repository.findAllByEmailContainingIgnoreCase(email));
-    }
+	/*
+	 * @GetMapping("/email/{email}") public ResponseEntity<Optional<Usuario>>
+	 * getByEmail(@PathVariable String email){ return
+	 * ResponseEntity.ok(repository.findAllByEmailContainingIgnoreCase(email)); }
+	 */
 	
 	@PostMapping("/cadastrar")
 	public ResponseEntity<Usuario> Post(@RequestBody Usuario usuario) {

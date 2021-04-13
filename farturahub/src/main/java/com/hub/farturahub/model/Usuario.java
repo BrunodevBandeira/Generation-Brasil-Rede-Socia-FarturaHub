@@ -56,6 +56,7 @@ public class Usuario {
 		this.nomeCompleto = nomeCompleto;
 	}
 
+	
 	public String getEmail() {
 		return email;
 	}

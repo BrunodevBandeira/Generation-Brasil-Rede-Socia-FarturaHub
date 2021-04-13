@@ -9,31 +9,24 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.hub.farturahub.Repository.UsuarioRepository;
 import com.hub.farturahub.model.Usuario;
 
 @Service
-public abstract class UserDetailsServiceImpl implements UserDetailsService  {
-    	
-	
+public class UserDetailsServiceImpl implements UserDetailsService {
+    
     @Autowired
     private UsuarioRepository userRepository;
 
-    private List<GrantedAuthority> authorities;
+    @Override
+    public UserDetails loadUserByUsername(String username) {
+        Optional<Usuario> user = userRepository.findByEmail(username);
+        user.orElseThrow(() -> new UsernameNotFoundException(username + " not found."));
 
-
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return authorities;
-    }
-
-    public UserDetails loadUserByemail (String email) throws AccountNotFoundException{
-        Optional<Usuario> user = userRepository.findAllByEmail(email);
-        user.orElseThrow(() -> new AccountNotFoundException(email + "Not found."));
-
-        return user.map(UserDetailsImpl::new).get();
+        return user.map(UserDetailsImpl::new ).get();
     }
 
 }
-
