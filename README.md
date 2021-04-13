@@ -10,8 +10,11 @@
   
 ### Valores
 :triangular_flag_on_post:Fome de ajudar quem precisa
+
 :triangular_flag_on_post:Fome de aprender
+
 :triangular_flag_on_post:Fome de respeitar
+
 :triangular_flag_on_post:Fome de lutar pela deflagração do fim da fome e pela agricultura sustentável
 
 :beginner: Passos:
