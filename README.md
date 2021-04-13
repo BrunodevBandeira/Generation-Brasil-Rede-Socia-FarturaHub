@@ -1,6 +1,25 @@
-# Generation-Brasil-Rede-Social-FarturaHub
+## Generation-Brasil-Rede-Social-FarturaHub
 
-:beginner: Passos:
+### História
+
+   Diante do agravamento da crise alimentícia e da reaproximação do Brasil ao mapa da fome, agravadas pela pandemia do Sars-CoV-2, despertou-se em nós o anseio em ajudar a mitigar os danos causados pela insegurança alimentar e pela agricultura não sustentável. Dessa forma, surgiu a rede social FarturaHub. Inicialmente, o principal objetivo dessa rede é conectar pessoas que precisam de ajuda com pessoas que querem ajudar, sobretudo naquilo que diz respeito a alimentação e agricultura sustentável. Assim, por meio dessa ferramenta, além da ajuda entre os usuários, promove-se a arte do plantio sustentável, como forma de subsistência ou comércio.
+  
+### Propósito
+
+   O nosso principal propósito é promover o afastamento do Brasil do mapa da fome, além de conectar pessoas e empresas que querem ajudar, mas não sabem por onde começar, gerando, assim, um ciclo sem fim de união e ajuda ao próximo.
+  
+### Valores
+:triangular_flag_on_post:Fome de ajudar quem precisa
+
+:triangular_flag_on_post:Fome de aprender
+
+:triangular_flag_on_post:Fome de respeitar
+
+:triangular_flag_on_post:Fome de lutar pela deflagração do fim da fome e pela agricultura sustentável
+
+
+
+### :beginner: Passos:
 
 :heavy_check_mark: Criação do projeto na IDE Eclipse 
 
@@ -34,6 +53,4 @@
 :heavy_check_mark: Criação dos atributos e funcionalidades da tabela de usuário
 
 
-:heavy_check_mark: Criação da camada de segurança, encriptografando dados e evitando a duplicidade de cadastro
-
-
+:heavy_check_mark: Criação da documentação com Swagger e Deploy do projeto
