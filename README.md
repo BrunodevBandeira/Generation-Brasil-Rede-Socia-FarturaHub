@@ -1,7 +1,5 @@
 # Generation-Brasil-Rede-Socia-FarturaHub
 
-# Generation-Brasil-Rede-Social-FarturaHub
-
 :beginner: Passos:
 
 :heavy_check_mark: Criação do projeto na IDE Eclipse 
