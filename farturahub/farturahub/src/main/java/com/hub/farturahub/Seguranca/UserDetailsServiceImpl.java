@@ -15,12 +15,10 @@ import com.hub.farturahub.Repository.UsuarioRepository;
 import com.hub.farturahub.model.Usuario;
 
 @Service
-
 public abstract class UserDetailsServiceImpl implements UserDetailsService  {
     	
 	
     @Autowired
-    
     private UsuarioRepository userRepository;
 
     private List<GrantedAuthority> authorities;
@@ -30,9 +28,9 @@ public abstract class UserDetailsServiceImpl implements UserDetailsService  {
         return authorities;
     }
 
-    public UserDetails loadUserBycpfCnpj (String cpfCnpj) throws AccountNotFoundException{
-        Optional<Usuario> user = userRepository.findAllBycpfCnpj(cpfCnpj);
-        user.orElseThrow(() -> new AccountNotFoundException(cpfCnpj + "Not found."));
+    public UserDetails loadUserByemail (String email) throws AccountNotFoundException{
+        Optional<Usuario> user = userRepository.findAllByEmail(email);
+        user.orElseThrow(() -> new AccountNotFoundException(email + "Not found."));
 
         return user.map(UserDetailsImpl::new).get();
     }

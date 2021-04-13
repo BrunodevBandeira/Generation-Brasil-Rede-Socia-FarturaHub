@@ -30,7 +30,6 @@ public class Usuario {
 	private String email;
 	
 	@NotNull
-	@Size(min=8, max=250)
 	private String senha;
 
 	public long getId() {

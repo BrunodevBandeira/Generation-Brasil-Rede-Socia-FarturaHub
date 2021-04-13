@@ -22,8 +22,6 @@ import com.hub.farturahub.model.Tema;
 @RestController
 @RequestMapping("/tema")
 @CrossOrigin("*")
-
-
 public class TemaController {
 	
 	@Autowired
