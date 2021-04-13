@@ -1,18 +1,21 @@
 ## Generation-Brasil-Rede-Social-FarturaHub
 
-### Contribuintes:
+### História
 
-[<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=" width=115 > <br> <sub> Diana Regina </sub>](https://github.com/Diana-ops) |
-[<img src="https://avatars.githubusercontent.com/u/68456392?v=4" width=115 > <br> <sub> Bruno Bandeira </sub>](https://github.com/BrunodevBandeira)] |
+  Diante do agravamento da crise alimentícia e da reaproximação do Brasil ao mapa da fome, agravadas pela pandemia do Sars-CoV-2, despertou-se em nós o anseio em ajudar a mitigar os danos causados pela insegurança alimentar e pela agricultura não sustentável. Dessa forma, surgiu a rede social FarturaHub. Inicialmente, o principal objetivo dessa rede é conectar pessoas que precisam de ajuda com pessoas que querem ajudar, sobretudo naquilo que diz respeito a alimentação e agricultura sustentável. Assim, por meio dessa ferramenta, além da ajuda entre os usuários, promove-se a arte do plantio sustentável, como forma de subsistência ou comércio.
+  
+### Propósito
 
+  O nosso principal propósito é promover o afastamento do Brasil do mapa da fome, além de conectar pessoas e empresas que querem ajudar, mas não sabem por onde começar, gerando, assim, um ciclo sem fim de união e ajuda ao próximo.
+  
+### Valores
+*Fome de ajudar quem precisa
 
+**Fome de aprender
 
-| :---: |[<img src="https://avatars.githubusercontent.com/u/68456392?v=4" width=115 > <br> <sub> Bruno Bandeira </sub>](https://github.com/BrunodevBandeira)] || :---: |
-| :---: |[<img src="https://avatars.githubusercontent.com/u/79025446?v=4" width=115 > <br> <sub> Giulliana Munhoz </sub>](https://github.com/giullliana) |
-| :---: |[<img src="https://avatars.githubusercontent.com/u/67028249?s=400&u=f8af52940311acbcefe3d2c61b8d8a337fe03d05&v=4" width=115 > <br> <sub> Murilo Paulino Machado </sub>](https://github.com/murilo-pm) |
-| :---: |[<img src="https://avatars.githubusercontent.com/u/71995794?v=4" width=115 > <br> <sub> Nayane Amorim </sub>](https://github.com/Nayaneast) |
-| :---: |[<img src="https://avatars.githubusercontent.com/u/65926480?v=4" width=115 > <br> <sub> Thales Santana </sub>](https://github.com/Thales-Santan) |
-| :---: |[<img src="https://avatars.githubusercontent.com/u/79110293?v=4" width=115 > <br> <sub> Sthepany Macedo </sub>](https://github.com/stephanymacedo) |
+*Fome de respeitar
+
+*Fome de lutar pela deflagração do fim da fome e pela agricultura sustentável
 
 :beginner: Passos:
 
