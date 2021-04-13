@@ -2,8 +2,12 @@
 
 ### Contribuintes:
 
-[<img src="https://avatars.githubusercontent.com/u/67028249?s=400&u=f8af52940311acbcefe3d2c61b8d8a337fe03d05&v=4" width=115 > <br> <sub> Murilo Paulino Machado </sub>](https://github.com/murilo-pm) |
-| :---: |  
+[<img src="https://avatars.githubusercontent.com/u/68456392?v=4" width=115 > <br> <sub> Bruno Bandeira </sub>](https://github.com/BrunodevBandeira) |
+| :---: |[<img src="https://avatars.githubusercontent.com/u/79025446?v=4" width=115 > <br> <sub> Giulliana Munhoz </sub>](https://github.com/giullliana) |
+| :---: | [<img src="https://avatars.githubusercontent.com/u/67028249?s=400&u=f8af52940311acbcefe3d2c61b8d8a337fe03d05&v=4" width=115 > <br> <sub> Murilo Paulino Machado </sub>](https://github.com/murilo-pm) || :---: | [<img src="https://avatars.githubusercontent.com/u/71995794?v=4" width=115 > <br> <sub> Nayane Amorim </sub>](https://github.com/Nayaneast) |
+| :---: || :---: | [<img src="https://avatars.githubusercontent.com/u/65926480?v=4" width=115 > <br> <sub> Thales Santana </sub>](https://github.com/Thales-Santan) |
+| :---: | [<img src="https://avatars.githubusercontent.com/u/79110293?v=4" width=115 > <br> <sub> Sthepany Macedo </sub>](https://github.com/stephanymacedo) |
+| :---: |
 
 :beginner: Passos:
 
