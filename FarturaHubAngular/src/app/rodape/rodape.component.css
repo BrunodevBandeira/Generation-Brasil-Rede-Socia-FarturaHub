@@ -1,0 +1,16 @@
+.corTerra{
+    background-color: #8B4513;
+}
+
+.corLetraBranco{
+    color: white;
+}    
+
+.corVerdeEscuro{
+    color: #006400;
+}
+
+ul.redeSocial{
+    list-style: none;
+    padding: 0;
+}
