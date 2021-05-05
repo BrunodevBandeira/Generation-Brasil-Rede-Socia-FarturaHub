@@ -17,7 +17,6 @@ public class UserLogin {
 	private String foto;
 
 	
-	
 	public String getFoto() {
 		return foto;
 	}
