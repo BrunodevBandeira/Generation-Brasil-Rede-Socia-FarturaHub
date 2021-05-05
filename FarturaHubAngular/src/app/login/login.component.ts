@@ -15,8 +15,10 @@ export class LoginComponent implements OnInit {
 
   userLogin:UserLogin=new UserLogin()
 
-  constructor(private auth: AuthService,
-    private router: Router) {
+  constructor(
+    private auth: AuthService,
+    private router: Router
+    ) {
     }
 
   ngOnInit(){
@@ -29,10 +31,11 @@ export class LoginComponent implements OnInit {
       environment.token = this.userLogin.token
       environment.nomeCompleto = this.userLogin.nomeCompleto
       environment.id = this.userLogin.id
+      this.router.navigate(["/inicio"])
 
-      console.log(environment.token)
-      console.log(environment.nomeCompleto)
-      console.log(environment.id)
+      console.log(this.userLogin.token)
+     /*  console.log(environment.nomeCompleto)
+      console.log(environment.id) */
 
       this.userLogin=resp
   }, erro=>{

@@ -11,6 +11,28 @@ public class UserLogin {
 	private String senha;
 	
 	private String token;
+	
+	private long id;
+	
+	private String foto;
+
+	
+	
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
 
 	public String getCpfCnpj() {
 		return cpfCnpj;

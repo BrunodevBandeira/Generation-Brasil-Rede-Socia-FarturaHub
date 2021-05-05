@@ -13,6 +13,10 @@ import com.sun.istack.NotNull;
 @Table(name = "tb_usuario")
 public class Usuario {
 	
+	
+
+	private String foto;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
@@ -22,7 +26,7 @@ public class Usuario {
 	private String cpfCnpj;
 	
 	@NotNull
-	@Size(min=8, max=75)
+	@Size(min=3, max=75)
 	private String nomeCompleto;
 	
 	@NotNull
@@ -31,6 +35,7 @@ public class Usuario {
 	
 	@NotNull
 	private String senha;
+	
 
 	public long getId() {
 		return id;
@@ -72,5 +77,12 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}	
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
 	
 }
