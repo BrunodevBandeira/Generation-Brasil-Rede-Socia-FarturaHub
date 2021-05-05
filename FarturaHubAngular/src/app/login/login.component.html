@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="row d-flex align-items-center">
+        <div class="col-md-6" id="img-bg">
+
+        </div>
+        <div class="col-md-6">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
+                    <h1 class="text-center mb-6"> Entre </h1>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input [(ngModel)]="userLogin.email" class="form-control" type="text" name="email" id= "email" placeholder="Digite aqui seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input [(ngModel)]="userLogin.senha" class="form-control" type="password" name="senha" id= "senha" placeholder="Digite aqui sua senha">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-sucess" (click)="entrar()">Farture-se</button>
+                    </div>
+                    <hr class="mb-5 md-5">
+                    <p class="text-center">
+                        Deseja ajudar? <a routerLink="/cadastrar">Cadastre-se</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

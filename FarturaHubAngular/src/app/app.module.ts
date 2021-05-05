@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +10,10 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { HistoriaComponent } from './historia/historia.component';
 import { PropositoComponent } from './proposito/proposito.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { LoginComponent } from './login/login.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,13 +22,21 @@ import { InicioComponent } from './inicio/inicio.component';
     RodapeComponent,
     HistoriaComponent,
     PropositoComponent,
-    InicioComponent
+    InicioComponent,
+    CadastroComponent,
+    LoginComponent
   ],
-  imports: [
+    imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
+    
   ],
-  providers: [],
+  providers: [{   //para evitar que o Angular "se perca" nas rotas
+    provide: LocationStrategy,
+    useClass: HashLocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
