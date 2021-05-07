@@ -54,3 +54,30 @@
 
 
 :heavy_check_mark: Criação da documentação com Swagger e Deploy do projeto
+
+
+:heavy_check_mark: Criação e configuração do projeto front-end com Angular, com HTML5, CSS3 e TypeScript
+
+
+:heavy_check_mark: Adição de pacotes npm:
+
+  :information_source: commons-codec;
+
+  :information_source: ngx-order-pipe;
+
+  :information_source: ngx-bootstrap;
+
+  :information_source: bootstrap@Latest;
+
+  :information_source: jquery@Latest;
+
+  :information_source: popper.js;
+
+
+:heavy_check_mark: Criação dos atributos e funcionalidades da model de postagem
+
+
+:heavy_check_mark: Criação dos atributos e funcionalidades da model de tema
+
+
+:heavy_check_mark: Criação dos atributos e funcionalidades da model de usuário
