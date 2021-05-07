@@ -26,15 +26,21 @@ export class LoginComponent implements OnInit {
   entrar(){
     //subscribe p/ criar um JSON
     this.auth.login(this.userLogin).subscribe((resp: UserLogin) =>{
+      this.userLogin = resp
+     
       environment.token = this.userLogin.token
       environment.nomeCompleto = this.userLogin.nomeCompleto
       environment.id = this.userLogin.id
+      environment.foto = this.userLogin.foto
 
       console.log(environment.token)
       console.log(environment.nomeCompleto)
+      console.log(environment.foto)
       console.log(environment.id)
 
-      this.userLogin=resp
+      this.router.navigate(["/inicio"])
+
+      
   }, erro=>{
     if(erro.status==500){
       alert ('usuário ou senha estão incorretos')

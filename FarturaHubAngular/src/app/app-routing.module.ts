@@ -7,12 +7,13 @@ import { HistoriaComponent } from './historia/historia.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
+import { PostagensComponent } from './postagens/postagens.component';
 import { PropositoComponent } from './proposito/proposito.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { TemaComponent } from './tema/tema.component';
 
 const routes: Routes = [
-  {path: "", redirectTo: "login", pathMatch: "full"},
+  {path: "", redirectTo: "entrar", pathMatch: "full"},
   //Os componentes "menu" e "rodape" referem-se a página "início"
   {path: "inicio", component: InicioComponent},
   {path: "historia", component: HistoriaComponent},
@@ -20,6 +21,8 @@ const routes: Routes = [
   {path: "entrar", component: LoginComponent},
   {path: "cadastrar", component: CadastroComponent},
   {path: "tema", component: TemaComponent},
+  //{path: "postagens", component: PostagensComponent},
+  
   //Os parâmetros serão passados por essa rota
   {path: "tema-edit/:id", component: TemaEditComponent},
   {path: "tema-delete/:id", component: TemaDeleteComponent}
