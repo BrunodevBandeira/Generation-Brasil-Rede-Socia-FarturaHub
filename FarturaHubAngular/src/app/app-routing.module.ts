@@ -9,7 +9,7 @@ import { PropositoComponent } from './proposito/proposito.component';
 import { RodapeComponent } from './rodape/rodape.component';
 
 const routes: Routes = [
-  {path: "", redirectTo: "login", pathMatch: "full"},
+  {path: "", redirectTo: "entrar", pathMatch: "full"},
   //Os componentes "menu" e "rodape" referem-se a página "início"
   {path: "inicio", component: InicioComponent},
   {path: "historia", component: HistoriaComponent},

@@ -13,7 +13,7 @@ import { AuthService } from '../service/auth.service';
 })
 export class LoginComponent implements OnInit {
 
-  userLogin:UserLogin=new UserLogin()
+  userLogin: UserLogin = new UserLogin()
 
   constructor(
     private auth: AuthService,
@@ -26,18 +26,15 @@ export class LoginComponent implements OnInit {
   }
 
   entrar(){
+   
     //subscribe p/ criar um JSON
     this.auth.login(this.userLogin).subscribe((resp: UserLogin) =>{
+      this.userLogin = resp
+     
       environment.token = this.userLogin.token
       environment.nomeCompleto = this.userLogin.nomeCompleto
       environment.id = this.userLogin.id
       this.router.navigate(["/inicio"])
-
-      console.log(this.userLogin.token)
-     /*  console.log(environment.nomeCompleto)
-      console.log(environment.id) */
-
-      this.userLogin=resp
   }, erro=>{
     if(erro.status==500){
       alert ('usuário ou senha estão incorretos')
