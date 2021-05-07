@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+.tamanhoImagem{
+    height: 600px;
+    width: 700px;
+    margin-left: 0%;
+}
+
+.tamanhoImagem2{
+    height: 600px;
+    width: 700px;
+    margin-left: 0%;
+}
