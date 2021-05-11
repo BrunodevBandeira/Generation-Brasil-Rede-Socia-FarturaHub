@@ -22,6 +22,7 @@ export class InicioComponent implements OnInit {
   listaTemas: Tema[]
   idTema: number
 
+
   user: User = new User()
   idUser = environment.id
 
@@ -38,6 +39,7 @@ export class InicioComponent implements OnInit {
       //alert("Sua sessão expirou. Faça o login")
       this.router.navigate(["/entrar"])
     }
+    this.getAllTemas()
     this.getAllPostagens()  //trará todos os temas ao iniciar
   }
 
@@ -71,7 +73,7 @@ export class InicioComponent implements OnInit {
 
     this.user.id = this.idUser  //receberá o ID de quem está logado
     this.postagem.usuario = this.user
-    
+
     this.inicioService.postPostagem(this.postagem).subscribe((resp: Postagem)=>{
       this.postagem = resp
       alert("Sua postagem foi feita com sucesso")
@@ -79,6 +81,10 @@ export class InicioComponent implements OnInit {
       this.getAllPostagens()
     })
 
+  }
+
+  limpar(){
+     
   }
 
 }
