@@ -18,6 +18,7 @@ import { TemaComponent } from './tema/tema.component';
 import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 import { PostagensComponent } from './postagens/postagens.component';
+import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PostagensComponent } from './postagens/postagens.component';
     TemaComponent,
     TemaDeleteComponent,
     TemaEditComponent,
-    PostagensComponent
+    PostagensComponent,
+    SobreNosComponent
   ],
     imports: [
     BrowserModule,
