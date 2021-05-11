@@ -73,18 +73,18 @@ export class InicioComponent implements OnInit {
 
     this.user.id = this.idUser  //receberá o ID de quem está logado
     this.postagem.usuario = this.user
-
-    this.inicioService.postPostagem(this.postagem).subscribe((resp: Postagem)=>{
+   
+     this.inicioService.postPostagem(this.postagem).subscribe((resp: Postagem)=>{
       this.postagem = resp
       alert("Sua postagem foi feita com sucesso")
       this.postagem = new Postagem
       this.getAllPostagens()
-    })
+    }) 
 
   }
 
-  limpar(){
+  /* limpar(){
      
-  }
+  } */
 
 }
