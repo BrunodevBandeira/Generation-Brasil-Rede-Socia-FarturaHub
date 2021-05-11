@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
+import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 import { HistoriaComponent } from './historia/historia.component';
 import { InicioComponent } from './inicio/inicio.component';
@@ -15,18 +17,22 @@ import { TemaComponent } from './tema/tema.component';
 const routes: Routes = [
   {path: "", redirectTo: "entrar", pathMatch: "full"},
   //Os componentes "menu" e "rodape" referem-se a página "início"
-  {path: "inicio", component: InicioComponent},
+  {path: "inicio", component: InicioComponent}, //deve ir para o início para realizar a POSTAGEM
   {path: "historia", component: HistoriaComponent},
   {path: "proposito", component: PropositoComponent},
   {path: "entrar", component: LoginComponent},
   {path: "cadastrar", component: CadastroComponent},
   {path: "tema", component: TemaComponent},
+  //{path: "postagens", component: PostagensComponent},   
   //{path: "postagens", component: PostagensComponent},
   
-  //Os parâmetros serão passados por essa rota
+  //Os parâmetros referentes ao tema serão passados por essa rota
   {path: "tema-edit/:id", component: TemaEditComponent},
-  {path: "tema-delete/:id", component: TemaDeleteComponent}
+  {path: "tema-delete/:id", component: TemaDeleteComponent},
 
+  //Os parâmetros referentes ao tema serão passados por essa rota
+  {path: "Postagem-edit/:id", component: PostagemEditComponent},
+  {path: "Postagem-delete/:id", component: PostagemDeleteComponent}
 ];
 
 @NgModule({

@@ -25,8 +25,8 @@ export class TemaDeleteComponent implements OnInit {    //TUDO OKAY AQUI
       this.router.navigate(["/entrar"])
     }
 
-    let id = this.route.snapshot.params["id"]
-    this.findByIdTema(id) 
+    this.idTema = this.route.snapshot.params["id"]
+    this.findByIdTema(this.idTema) 
 
   }
 
