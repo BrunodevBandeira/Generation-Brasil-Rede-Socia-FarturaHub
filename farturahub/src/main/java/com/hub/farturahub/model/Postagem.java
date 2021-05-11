@@ -25,13 +25,13 @@ public class Postagem {
 	
 	@NotNull
 	@Size(min = 3, max = 100)
-	private String titulo;
+	private String titulo;		/////////////////////
 	
 	@NotNull
 	@Size(min = 1, max = 1000)
-	private String descricao;
+	private String descricao; 	/////////////////////
 	
-	@NotNull
+	/*@NotNull
 	@Size(min = 2, max = 20)
 	private String regiao;
 	
@@ -41,13 +41,13 @@ public class Postagem {
 	@NotNull
 	@Size(min = 2, max = 50)
 	private String nomeAjudante;
-	
+	*/
 	@NotNull
 	@Size(min = 10, max = 100)
 	private String contato;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-    private Date data = new java.sql.Date(System.currentTimeMillis());
+    private Date data = new java.sql.Date(System.currentTimeMillis()); /////////////////////
 	
 	//relacionamento
 	@ManyToOne
@@ -81,7 +81,7 @@ public class Postagem {
 		this.descricao = descricao;
 	}
 
-	public String getRegiao() {
+	/*public String getRegiao() {
 		return regiao;
 	}
 
@@ -91,7 +91,7 @@ public class Postagem {
 
 	public Boolean getAjudado() {
 		return ajudado;
-	}
+	}//
 
 	public void setAjudado(Boolean ajudado) {
 		this.ajudado = ajudado;
@@ -104,7 +104,7 @@ public class Postagem {
 	public void setNomeAjudante(String nomeAjudante) {
 		this.nomeAjudante = nomeAjudante;
 	}
-
+*/
 	public String getContato() {
 		return contato;
 	}

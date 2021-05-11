@@ -1,6 +1,8 @@
 package com.hub.farturahub.model;
 
 public class UserLogin {
+	
+	private long id;
  
 	private String cpfCnpj;
 	
@@ -55,4 +57,14 @@ public class UserLogin {
 		this.token = token;
 	}
 
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	
+	
 }
