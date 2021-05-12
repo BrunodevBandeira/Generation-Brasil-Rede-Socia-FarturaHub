@@ -52,7 +52,7 @@
         </button>
       </div> -->
 
-
+      
       <p class="text-dark">
         <button class="btn btn-warning mt-3 ml-3" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             Faça sua postagem
@@ -74,6 +74,7 @@
                 <label for="contato">Contato</label>
                   <input [(ngModel)]='postagem.contato' type="text" class="form-control" id="contato"
                     placeholder="Digite aqui um endereço de contato">
+                    
                 <div class="form-group">
                   <label for="texto">Escolha um tema ou <a data-dismiss="modal" routerLink="/tema">cadastre um novo </a>:
                   </label>
@@ -86,11 +87,24 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="collapseExample">Cancelar</button>
-                <button type="button" class="btn btn-success" (click)='publicar()' data-dismiss="modal">Publicar</button>
+                <button type="button" class="btn btn-success" (click)='publicar()' data-dismiss="collapseExample">Publicar</button>
              
       
         </div>
+         </div>
 
+         <div class="card mb-3">
+          <div class="card-body" *ngFor='let item of listaPostagens'>
+            <h5 class="card-title">{{item.titulo}}</h5>
+            <small class="text-muted mb-3">Conteúdo: {{item.tema}}<!-- {{item.tema.descricao}} --></small>
+            <p class="card-text">{{item.descricao}}</p>
+            <h5 class="card-text">{{item.contato}}</h5>
+            <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}</small></p>
+          <!--  <p class="card-text"><small class="text-muted">por: {{item.usuario.nomeCompleto}}</small></p> -->
+          </div>
+        </div>
+     
+  
 
           <!-- <div class="container mt-5 mb-5">
 
@@ -138,7 +152,7 @@
         </div>
         
         </div> -->
-        </div>
+        
      
 
     

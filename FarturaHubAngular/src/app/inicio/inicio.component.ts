@@ -6,6 +6,7 @@ import { Tema } from '../model/Tema';
 import { User } from '../model/User';
 import { AuthService } from '../service/auth.service';
 import { InicioService } from '../service/inicio.service';
+import { PostagemService } from '../service/postagem.service';
 import { TemaService } from '../service/tema.service';
 
 @Component({
@@ -30,6 +31,7 @@ export class InicioComponent implements OnInit {
     private router: Router,
     private inicioService: InicioService, //inicio == postagem
     private temaService: TemaService,
+    private postagemService : PostagemService,
     private authService: AuthService  
   ) { }
 
@@ -74,8 +76,9 @@ export class InicioComponent implements OnInit {
     this.user.id = this.idUser  //receberá o ID de quem está logado
     this.postagem.usuario = this.user
    
-     this.inicioService.postPostagem(this.postagem).subscribe((resp: Postagem)=>{
+     this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem)=>{
       this.postagem = resp
+      console.log(this.postagem)
       alert("Sua postagem foi feita com sucesso")
       this.postagem = new Postagem
       this.getAllPostagens()
