@@ -91,15 +91,14 @@
         </div>
 </div>
 
-<div class="card mb-3">
-        
+<div class="card mb-3">       
         <div class="card-body" *ngFor='let item of listaPostagens'>
           <h5 class="card-title">{{item.titulo}}</h5>
-          <small class="text-muted mb-3">Tema: {{item.tema.descricao}}</small>
+          <small class="text-muted mb-3">Conteúdo: {{item.tema}}<!-- {{item.tema.descricao}} --></small>
           <p class="card-text">{{item.descricao}}</p>
           <h5 class="card-text">{{item.contato}}</h5>
           <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}</small></p>
-          <!-- <p class="card-text"><small class="text-muted">por: {{item.usuario.nome}}</small></p> -->
+          <p class="card-text"><small class="text-muted">por: {{item.usuario.nomeCompleto}}</small></p>
         </div>
       </div>
 
