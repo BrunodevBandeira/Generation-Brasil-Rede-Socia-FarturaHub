@@ -31,7 +31,7 @@ public class Postagem {
 	@Size(min = 1, max = 1000)
 	private String descricao;
 	
-	@NotNull
+	/*@NotNull
 	@Size(min = 2, max = 20)
 	private String regiao;
 	
@@ -40,7 +40,7 @@ public class Postagem {
 	
 	@NotNull
 	@Size(min = 2, max = 50)
-	private String nomeAjudante;
+	private String nomeAjudante;*/
 	
 	@NotNull
 	@Size(min = 10, max = 100)
@@ -81,7 +81,7 @@ public class Postagem {
 		this.descricao = descricao;
 	}
 
-	public String getRegiao() {
+	/*public String getRegiao() {
 		return regiao;
 	}
 
@@ -103,7 +103,7 @@ public class Postagem {
 
 	public void setNomeAjudante(String nomeAjudante) {
 		this.nomeAjudante = nomeAjudante;
-	}
+	}*/
 
 	public String getContato() {
 		return contato;
