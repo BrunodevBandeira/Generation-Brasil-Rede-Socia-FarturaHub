@@ -18,15 +18,15 @@ import { TemaComponent } from './tema/tema.component';
 import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 import { PostagensComponent } from './postagens/postagens.component';
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { AlertasComponent } from './alertas/alertas.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 
-=======
+
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
->>>>>>> 15886d95bfe767e46c96e8c618f0f212468e1ac6
+/* >>>>>>> 15886d95bfe767e46c96e8c618f0f212468e1ac6 */
 
 @NgModule({
   declarations: [
@@ -42,14 +42,14 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
     TemaDeleteComponent,
     TemaEditComponent,
     PostagensComponent,
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
     PostagemEditComponent,
     PostagemDeleteComponent,
     AlertasComponent,
     
-=======
+/* ======= */
     SobreNosComponent
->>>>>>> 15886d95bfe767e46c96e8c618f0f212468e1ac6
+/* >>>>>>> 15886d95bfe767e46c96e8c618f0f212468e1ac6 */
   ],
     imports: [
     BrowserModule,
