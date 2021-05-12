@@ -34,7 +34,20 @@ export class LoginComponent implements OnInit {
       environment.token = this.userLogin.token
       environment.nomeCompleto = this.userLogin.nomeCompleto
       environment.id = this.userLogin.id
+<<<<<<< HEAD
       this.router.navigate(["/inicio"])
+=======
+      environment.foto = this.userLogin.foto
+
+      console.log(environment.token)
+      console.log(environment.nomeCompleto)
+      console.log(environment.foto)
+      console.log(environment.id)
+
+      this.router.navigate(["/inicio"])
+
+      
+>>>>>>> 6444eb83c3b868ffd957d995280b4d0bdf4a7a3c
   }, erro=>{
     if(erro.status==500){
       alert ('usuário ou senha estão incorretos')

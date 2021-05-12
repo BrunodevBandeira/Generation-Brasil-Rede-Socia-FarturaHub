@@ -8,26 +8,26 @@
     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link corLetraBranco" href="#">Início</a>
+          <a class="nav-link corLetraBranco" routerLink="/inicio">Feed de postagens</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Postagens</a>
+          <a class="nav-link" routerLink="/tema">Temas</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Mais
           </a>
-          <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu bg-warning " aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Editar perfil</a>
-            <a class="dropdown-item" href="#">História</a>
+            <a class="dropdown-item" routerLink="/historia">História</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Propósito e valores</a>
+            <a class="dropdown-item" routerLink="/proposito">Propósito e valores</a>
           </div>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-        <button class="btn btn-success my-2 my-sm-0" type="submit">Pesquisar</button>
+        <!-- <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar"> -->
+        <button class="btn btn-danger my-2 my-sm-0" type="submit">Sair</button>
       </form>
     </div>
   </nav>
