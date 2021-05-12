@@ -13,11 +13,17 @@ body {
 }
 
 .ft-t {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Cormorant Garamond';
 }
+
+
 
 .corTerra {
     background-color: #8B4513;
+}
+
+.ft-verde{
+    text-decoration: #052505;
 }
 
 .corLetraBranco {
@@ -31,6 +37,18 @@ body {
 ul.redeSocial {
     list-style: none;
     padding: 0;
+}
+
+
+.br{
+    border: 2px solid black ; 
+}
+
+.dev:hover
+{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
 }
 
 
