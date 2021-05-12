@@ -26,6 +26,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
+import { OrderModule } from 'ngx-order-pipe';
 /* >>>>>>> 15886d95bfe767e46c96e8c618f0f212468e1ac6 */
 
 @NgModule({
@@ -46,9 +47,9 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
     PostagemEditComponent,
     PostagemDeleteComponent,
     AlertasComponent,
-    
-/* ======= */
     SobreNosComponent
+/* ======= */
+    
 /* >>>>>>> 15886d95bfe767e46c96e8c618f0f212468e1ac6 */
   ],
     imports: [
@@ -56,7 +57,8 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    OrderModule
     
   ],
   providers: [{   //para evitar que o Angular "se perca" nas rotas
