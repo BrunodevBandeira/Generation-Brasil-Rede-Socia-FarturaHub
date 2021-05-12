@@ -1,0 +1,11 @@
+.container-fluid{
+    background-color: rgb(59, 192, 59);
+}
+
+#img-bg{
+    background-image:url(https://i.imgur.com/anqGMKV.png);
+    min-height: 695px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }

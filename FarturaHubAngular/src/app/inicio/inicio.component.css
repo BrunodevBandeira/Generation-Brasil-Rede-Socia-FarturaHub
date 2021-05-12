@@ -1,3 +1,7 @@
+.container-fluid{
+    min-height: 420px;
+}
+
 .corTerra{
     background-color: #8B4513;}
     
