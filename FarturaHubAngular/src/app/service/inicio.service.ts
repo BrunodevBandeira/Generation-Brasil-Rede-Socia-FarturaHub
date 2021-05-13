@@ -37,7 +37,7 @@ export class InicioService {    //inicioService = postagemService
   }
 
   putPostagem(postagem: Postagem): Observable<Postagem>{
-    return this.http.post<Postagem>("http://localhost:8080/postagem", postagem, this.token)
+    return this.http.put<Postagem>("http://localhost:8080/postagem", postagem, this.token)
   }
 
   deletePostagem(id: number){   //É obrigatório o uso da CRASE aqui

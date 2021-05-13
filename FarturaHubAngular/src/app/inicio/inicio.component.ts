@@ -106,18 +106,6 @@ export class InicioComponent implements OnInit {
 }
 
   
-  /*limpar(){
-    
-  } */
-
-
-  /* atualizar(){
-    this.inicioService.putPostagem(this.postagem).subscribe((resp: Postagem)=>{
-      this.postagem = resp
-      this.alertas.showAlertSuccess("Sua postagem foi atualizada atualizado")
-      this.router.navigate(["/inicio"])
-    })
-  } */
 
 
   

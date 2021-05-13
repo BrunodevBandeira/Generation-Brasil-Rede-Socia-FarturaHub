@@ -40,9 +40,7 @@ export class TemaEditComponent implements OnInit {
       alert("O tema foi atualizado")
       this.router.navigate(["/tema"])
     })
-  }
-
-
+  } 
 
 }
 
