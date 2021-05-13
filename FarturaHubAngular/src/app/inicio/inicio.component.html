@@ -65,7 +65,7 @@
   </div>
 
 
-  <div class="card mb-3 mt-3">
+  <div class="card mb-3 mt-3 shadow-lg p-3 mb-5 bg-white rounded">
     <div class="card-body" *ngFor='let item of listaPostagens | orderBy: key: reverse'>
       <h5 class="card-title">{{item.titulo}}</h5>
       <small class="text-muted mb-3">Conteúdo:</small>
@@ -76,15 +76,13 @@
           'HH:mm'}}</small></p>
       <!-- <p class="card-text"><small class="text-muted">por: {{item.usuario.nomeCompleto}}</small></p> -->
       <hr>
-      <button class="btn btn-info mr-3 mt-2 mb-3" [routerLink]="['/postagem-edit', item.id]">Editar</button>
+      <button class="btn btn-success mr-3 mt-2 mb-3" [routerLink]="['/postagem-edit', item.id]">Editar</button>
       <button class="btn btn-danger mt-2 mb-3" [routerLink]="['/postagem-delete', item.id]">Apagar</button> 
-      <div class="jumbotron jumbotron-fluid bg-success">
-        <div class="container">
+              <div class="container">
           <h1 class="display-4"></h1>
           <p class="lead"></p>
         </div>
-      </div>
-      <hr>
+          <hr>
     </div>
   </div>
 
