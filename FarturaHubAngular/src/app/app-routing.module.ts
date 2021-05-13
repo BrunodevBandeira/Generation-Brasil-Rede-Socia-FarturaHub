@@ -12,10 +12,11 @@ import { MenuComponent } from './menu/menu.component';
 import { PostagensComponent } from './postagens/postagens.component';
 import { PropositoComponent } from './proposito/proposito.component';
 import { RodapeComponent } from './rodape/rodape.component';
+import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { TemaComponent } from './tema/tema.component';
 
 const routes: Routes = [
-  {path: "", redirectTo: "entrar", pathMatch: "full"},
+  {path: "", redirectTo: "sobre-nos", pathMatch: "full"},
   //Os componentes "menu" e "rodape" referem-se a página "início"
   {path: "inicio", component: InicioComponent}, //deve ir para o início para realizar a POSTAGEM
   {path: "historia", component: HistoriaComponent},
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: "tema", component: TemaComponent},
   //{path: "postagens", component: PostagensComponent},   
   //{path: "postagens", component: PostagensComponent},
+  {path: "sobre-nos", component: SobreNosComponent},
   
   //Os parâmetros referentes ao tema serão passados por essa rota
   {path: "tema-edit/:id", component: TemaEditComponent},
