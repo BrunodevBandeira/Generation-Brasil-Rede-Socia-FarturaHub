@@ -33,8 +33,8 @@ const routes: Routes = [
   {path: "tema-delete/:id", component: TemaDeleteComponent},
 
   //Os parâmetros referentes ao tema serão passados por essa rota
-  {path: "Postagem-edit/:id", component: PostagemEditComponent},
-  {path: "Postagem-delete/:id", component: PostagemDeleteComponent}
+  {path: "postagem-edit/:id", component: PostagemEditComponent},
+  {path: "postagem-delete/:id", component: PostagemDeleteComponent}
 ];
 
 @NgModule({

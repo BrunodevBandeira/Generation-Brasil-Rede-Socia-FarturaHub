@@ -27,11 +27,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { OrderModule } from 'ngx-order-pipe';
-<<<<<<< HEAD
 /* >>>>>>> 15886d95bfe767e46c96e8c618f0f212468e1ac6 */
-=======
-
->>>>>>> 135c333ccef251273dc7e5b7ce6a9250c733d2a7
 
 @NgModule({
   declarations: [
@@ -51,13 +47,9 @@ import { OrderModule } from 'ngx-order-pipe';
     PostagemDeleteComponent,
     AlertasComponent,
     SobreNosComponent
-<<<<<<< HEAD
 /* ======= */
     
 /* >>>>>>> 15886d95bfe767e46c96e8c618f0f212468e1ac6 */
-=======
-
->>>>>>> 135c333ccef251273dc7e5b7ce6a9250c733d2a7
   ],
     imports: [
     BrowserModule,
