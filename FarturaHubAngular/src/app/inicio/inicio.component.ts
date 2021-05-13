@@ -31,9 +31,13 @@ export class InicioComponent implements OnInit {
   key = 'data'
   reverse = true
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   postagemService: any;
 >>>>>>> 135c333ccef251273dc7e5b7ce6a9250c733d2a7
+=======
+  postagemService: any; 
+>>>>>>> cba9b9e4062982500b5e084de96e3602eac45299
 
   constructor(
     private router: Router,
@@ -103,6 +107,25 @@ export class InicioComponent implements OnInit {
       })
     }
 
+<<<<<<< HEAD
   }
+=======
+  } 
+
+  
+  /*limpar(){
+    
+  } */
+>>>>>>> cba9b9e4062982500b5e084de96e3602eac45299
+
+  atualizar(){
+    this.inicioService.putPostagem(this.postagem).subscribe((resp: Postagem)=>{
+      this.postagem = resp
+      alert("Sua postagem foi atualizada atualizado")
+      this.router.navigate(["/inicio"])
+    })
+  }
+
+
 
 }
