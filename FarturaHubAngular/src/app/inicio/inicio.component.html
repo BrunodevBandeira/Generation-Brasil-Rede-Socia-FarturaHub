@@ -86,13 +86,25 @@
               <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="collapseExample">Cancelar</button>
                 <button type="button" class="btn btn-success" (click)='publicar()' data-dismiss="modal">Publicar</button>
-             
-      
         </div>
 </div>
 
+<<<<<<< HEAD
 <div class="card mb-3">       
         <div class="card-body" *ngFor='let item of listaPostagens | orderBy: key: reverse'>
+=======
+  <div class="row d-flex justify-content-center mt-5 mb-5">
+    <div class="col-md-4">
+      <div class="form-group">
+        <input type="text" class="form-control" id="titulo" placeholder="Digite um titulo de postagem para pesquisar" [(ngModel)]='tituloPost' (keyup)= 'findByTituloPostagem()'>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3" *ngFor='let tema of listaTemas'>      
+        <div class="card-body" *ngFor='let item of tema.postagem | orderBy: key: reverse'>
+          <div class="card-body">
+>>>>>>> 135c333ccef251273dc7e5b7ce6a9250c733d2a7
           <h5 class="card-title">{{item.titulo}}</h5>
           <small class="text-muted mb-3">Conteúdo: {{item.tema}}<!-- {{item.tema.descricao}} --></small>
           <p class="card-text">{{item.descricao}}</p>
@@ -109,7 +121,7 @@
           <hr>
         </div>
       </div>
-
+</div>
 
 
 
