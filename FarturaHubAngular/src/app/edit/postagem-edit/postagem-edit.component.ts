@@ -58,11 +58,23 @@ export class PostagemEditComponent implements OnInit {
     })
   }
 
-  atualizar() {
+  /* atualizar() {
+    alert("Começou")
     this.inicioService.putPostagem(this.postagem).subscribe((resp: Postagem) => {
       this.postagem = resp
       alert("A postagem foi atualizada")
-      this.router.navigate(["/postagem-edit/${id}"])
+      this.router.navigate(["/inicio"])
+    })
+  } */
+  
+  atualizar()
+  {
+    this.tema.id = this.idTema;
+    this.postagem.tema = this.tema;
+    this.inicioService.putPostagem(this.postagem).subscribe((resp: Postagem) =>{
+      this.postagem = resp
+      alert("Produto atualizado com sucesso!")
+      this.router.navigate(["/inicio"])
     })
   }
 
