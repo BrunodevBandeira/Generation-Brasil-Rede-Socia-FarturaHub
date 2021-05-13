@@ -9,4 +9,6 @@ import com.hub.farturahub.model.Postagem;
 public interface PostagemRepository extends JpaRepository <Postagem, Long> {
 	//public List<Postagem> findAllByRegiaoContainingIgnoreCase(String regiao);
 	public List<Postagem> findAllByTituloContainingIgnoreCase(String titulo);
+
+	public List<Postagem> findAllByDescricaoContainingIgnoreCase(String descricao);
 }

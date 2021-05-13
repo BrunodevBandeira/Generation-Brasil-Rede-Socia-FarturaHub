@@ -40,6 +40,12 @@ public class PostagemController {
 		return ResponseEntity.ok(repository.findAllByRegiaoContainingIgnoreCase(regiao));
 	}
 */	
+	//busca de postagem por meio do texto/descrição/conteúdo
+	@GetMapping("/postagem/{descricao}")
+	public ResponseEntity<List<Postagem>> getByRegiao(@PathVariable String descricao){
+		return ResponseEntity.ok(repository.findAllByDescricaoContainingIgnoreCase(descricao));
+	}
+	
 	@PostMapping
 	public ResponseEntity<Postagem> post(@RequestBody Postagem post){
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(post));
