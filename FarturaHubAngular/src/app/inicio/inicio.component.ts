@@ -23,12 +23,14 @@ export class InicioComponent implements OnInit {
   listaPostagens: Postagem[]
   listaTemas: Tema[]
   idTema: number
+  tituloPost: string
 
   user: User = new User()
   idUser = environment.id
 
   key = 'data'
   reverse = true
+  postagemService: any; 
 
   constructor(
     private router: Router,
@@ -88,8 +90,31 @@ export class InicioComponent implements OnInit {
 
   }
 
-  /* limpar(){
-     
+  findByTituloPostagem() {
+
+    if (this.tituloPost == '') {
+      this.getAllPostagens()
+    } else {
+      this.postagemService.getByTituloPostagem(this.tituloPost).subscribe((resp: Postagem[]) => {
+        this.listaPostagens = resp
+      })
+    }
+
+  } 
+
+  
+  /*limpar(){
+    
   } */
+
+  atualizar(){
+    this.inicioService.putPostagem(this.postagem).subscribe((resp: Postagem)=>{
+      this.postagem = resp
+      alert("Sua postagem foi atualizada atualizado")
+      this.router.navigate(["/inicio"])
+    })
+  }
+
+
 
 }

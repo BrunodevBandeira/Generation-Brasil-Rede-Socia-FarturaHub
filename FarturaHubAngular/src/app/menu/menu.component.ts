@@ -17,4 +17,15 @@ export class MenuComponent implements OnInit {
   /*public deslogar(){ 
     this.router.navigate(["/"]);
   }*/
+
+
+  //nay
+  sair(){
+    this.router.navigate(['/entrar'])
+    environment.token = ''
+    environment.nomeCompleto = ''
+    environment.foto = ''
+    environment.id = 0
+  }
+
 }
