@@ -1,5 +1,10 @@
 ## Generation-Brasil-Rede-Social-FarturaHub
 
+
+### :beginner: Link alternativo para o repositório back-end: https://github.com/giullliana/fartura-hub-backend
+### :beginner: Link alternativo para o repositório front-end: https://github.com/giullliana/fartura-hub-frontend
+
+
 ### História
 
    Diante do agravamento da crise alimentícia e da reaproximação do Brasil ao mapa da fome, agravadas pela pandemia do Sars-CoV-2, despertou-se em nós o anseio em ajudar a mitigar os danos causados pela insegurança alimentar e pela agricultura não sustentável. Dessa forma, surgiu a rede social FarturaHub. Inicialmente, o principal objetivo dessa rede é conectar pessoas que precisam de ajuda com pessoas que querem ajudar, sobretudo naquilo que diz respeito a alimentação e agricultura sustentável. Assim, por meio dessa ferramenta, além da ajuda entre os usuários, promove-se a arte do plantio sustentável, como forma de subsistência ou comércio.
